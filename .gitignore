@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+# microWord: build output
+/build/
+/microword
+/microword.exe
+
+# microWord: user documents (the program recreates the folder when it is missing)
+/Documentos/
+
+# microWord: remembered language choice (per user/machine)
+/Idiomas/idioma.cfg
