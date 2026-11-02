@@ -1,0 +1,5 @@
+# One language id per line = Idiomas/<id>.txt (english is always loaded first).
+# To add a language: copy english.txt, translate it, and add its id here.
+spanish
+japanese
+german

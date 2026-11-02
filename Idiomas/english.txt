@@ -1,0 +1,115 @@
+# microWord - English (reference language: every key must exist here)
+# Format: key=text   ·   \n = new line, \\ = backslash   ·   keep the %s %zu %c markers
+lang.name=English
+
+# Command letters in the editor, and answers to yes/no questions
+key.add=A
+key.insert=I
+key.edit=E
+key.delete=D
+key.type=T
+key.view=V
+key.save=S
+key.quit=Q
+confirm.yes=yY
+confirm.no=nN
+confirm.hint=(y/N)
+end.word=END
+
+# Main screen
+app.tagline=Document editor for .odt / .docx, written in C
+app.credit=  by Emi  ·  %s
+menu.title=Options
+menu.create=Create document
+menu.open=Open / edit document
+menu.delete=Delete document
+menu.convert=Convert .odt <-> .docx
+menu.language=Language / Idioma
+menu.exit=Exit
+title.create=Create document
+title.open=Open / edit document
+title.delete=Delete document
+title.convert=Convert .odt <-> .docx
+title.language=Language / Idioma
+bye=See you later :)
+
+# Prompts
+prompt.option=Option
+prompt.docname=Document name
+prompt.format=Format
+prompt.paragraph=Paragraph number
+prompt.command=Command
+prompt.type=Type
+prompt.text=Text
+prompt.language=Language number
+ui.press_enter=Press ENTER to continue...
+
+# Messages
+info.format_choice=Format:  [1] .odt (OpenDocument)   [2] .docx (Word)
+info.cancelled=Cancelled.
+info.unchanged=No changes.
+err.invalid_option=Invalid option, please try again.
+err.name_empty=The name cannot be empty.
+err.name_chars=The name has characters that are not allowed (such as / \\ " $ ; & |) or starts with '-'.
+err.name_long=The name is too long.
+err.docs_dir=Could not create the documents folder '%s'.
+err.exists='%s' already exists. Use option 2 (open / edit).
+err.not_found='%s' does not exist.
+err.not_found_type='%s' does not exist or is not .odt/.docx.
+err.delete_failed=Could not delete '%s'.
+err.reason=    reason
+err.tools_posix=zip and/or unzip are missing. Install them (e.g. sudo apt install zip unzip).
+err.tools_win='tar' was not found (it is included in Windows 10 and later).
+ok.deleted='%s' was deleted.
+ok.converted=%s  ->  %s
+confirm.delete=Are you sure you want to delete it?
+confirm.overwrite=The destination already exists. Overwrite?
+lang.changed=Language set to %s.
+
+# File errors
+err.fmt_unsupported=Unsupported format (use .odt or .docx).
+err.tmp_failed=Could not create a temporary folder.
+err.write_xml=Could not write the temporary XML files.
+err.zip_failed=Compression (zip) failed.
+err.write_file=Could not write '%s'.
+err.cannot_open=Could not open '%s'.
+err.not_zip='%s' is not a valid zip container (old microWord XML file?).
+err.unzip_failed=Decompression of '%s' failed.
+err.missing_part=The document does not contain %s.
+err.parse_failed=Could not interpret the document contents.
+
+# Editor
+ed.title=  microWord  ▸  %s
+ed.info=  %zu paragraphs
+ed.m.add=Add at the end
+ed.m.insert=Insert before paragraph N
+ed.m.edit=Edit paragraph N
+ed.m.delete=Delete paragraph N
+ed.m.type=Change the type of paragraph N
+ed.m.view=View everything
+ed.m.save=Save
+ed.m.quit=Quit
+ed.empty=(empty document: use the Add command to write)
+ed.more_before=... %zu earlier paragraphs (%c to view all)
+ed.err_index=Invalid paragraph number (1-%zu).
+ed.err_unknown=Unknown command. Use the letters shown in the menu.
+add.title=Writing mode
+add.hint1=One line = one paragraph.  Empty ENTER = blank paragraph
+add.hint2=# Title   ## Subtitle   **bold**   *italic*
+add.hint3=  Type %s and ENTER to finish
+add.done=%zu paragraph(s) added.
+edit.title=  Editing paragraph %zu  (%s)
+edit.current=Current:
+edit.hint=New text (empty ENTER = no changes; accepts # ## ** *)
+edit.updated=Paragraph %zu updated.
+style.title=  Type of paragraph %zu
+style.normal=Normal
+style.h1=Title (H1)
+style.h2=Subtitle (H2)
+style.bold=Bold
+style.italic=Italic
+style.changed=Paragraph %zu is now %s.
+view.title=  Full document (%zu paragraphs)
+save.ok=Saved to %s
+del.done=Paragraph %zu deleted.
+exit.unsaved=Unsaved changes. Save? [Y]es / [N]o / [C]ancel
